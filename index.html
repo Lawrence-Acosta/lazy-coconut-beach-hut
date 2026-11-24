@@ -9,86 +9,111 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="scene" aria-hidden="true">
+    <span class="sun"></span>
+    <span class="bubble b1"></span>
+    <span class="bubble b2"></span>
+    <span class="bubble b3"></span>
+    <span class="bubble b4"></span>
+    <span class="drift d1">🍃</span>
+    <span class="drift d2">🌴</span>
+    <span class="drift d3">🍃</span>
+  </div>
+
   <main class="page">
     <article class="card">
 
       <header class="hero">
-        <p class="badge">Beach Hut · Café · Rentals</p>
+        <p class="badge reveal" style="--d:0">Beach Hut · Café · Rentals</p>
 
-        <div class="coconut" aria-hidden="true">
-          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <radialGradient id="shell" cx="38%" cy="32%" r="75%">
-                <stop offset="0%" stop-color="#a8703a"/>
-                <stop offset="60%" stop-color="#6b3f1d"/>
-                <stop offset="100%" stop-color="#3f2410"/>
-              </radialGradient>
-            </defs>
-            <path d="M62 14 C 48 4, 34 10, 30 22 C 42 18, 54 20, 62 26 Z" fill="#2f8f5b"/>
-            <path d="M62 14 C 74 2, 92 8, 96 20 C 84 16, 72 18, 62 26 Z" fill="#3fa96e"/>
-            <circle cx="60" cy="64" r="44" fill="url(#shell)"/>
-            <ellipse cx="44" cy="46" rx="12" ry="7" fill="#ffffff" opacity=".22" transform="rotate(-25 44 46)"/>
-            <circle cx="48" cy="90" r="4.5" fill="#2a170a"/>
-            <circle cx="60" cy="96" r="4.5" fill="#2a170a"/>
-            <circle cx="72" cy="90" r="4.5" fill="#2a170a"/>
-          </svg>
+        <div class="coconut-wrap reveal" style="--d:1">
+          <span class="sparkle s1" aria-hidden="true"></span>
+          <span class="sparkle s2" aria-hidden="true"></span>
+          <span class="sparkle s3" aria-hidden="true"></span>
+          <div class="coconut" aria-hidden="true">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="shell" cx="38%" cy="32%" r="75%">
+                  <stop offset="0%" stop-color="#a8703a"/>
+                  <stop offset="60%" stop-color="#6b3f1d"/>
+                  <stop offset="100%" stop-color="#3f2410"/>
+                </radialGradient>
+              </defs>
+              <path d="M62 14 C 48 4, 34 10, 30 22 C 42 18, 54 20, 62 26 Z" fill="#2f8f5b"/>
+              <path d="M62 14 C 74 2, 92 8, 96 20 C 84 16, 72 18, 62 26 Z" fill="#3fa96e"/>
+              <circle cx="60" cy="64" r="44" fill="url(#shell)"/>
+              <ellipse cx="44" cy="46" rx="12" ry="7" fill="#ffffff" opacity=".22" transform="rotate(-25 44 46)"/>
+              <circle cx="48" cy="90" r="4.5" fill="#2a170a"/>
+              <circle cx="60" cy="96" r="4.5" fill="#2a170a"/>
+              <circle cx="72" cy="90" r="4.5" fill="#2a170a"/>
+            </svg>
+          </div>
         </div>
 
-        <h1>Lazy Coconut</h1>
-        <p class="tagline">Your little tropical escape</p>
+        <h1 class="reveal" style="--d:2">Lazy Coconut</h1>
+        <p class="tagline reveal" style="--d:3">Your little tropical escape</p>
+
+        <div class="waves" aria-hidden="true">
+          <svg class="wave-back" viewBox="0 0 2400 120" preserveAspectRatio="none">
+            <path d="M0 60 Q 150 20 300 60 T 600 60 T 900 60 T 1200 60 T 1500 60 T 1800 60 T 2100 60 T 2400 60 V120 H0 Z"/>
+          </svg>
+          <svg class="wave-front" viewBox="0 0 2400 120" preserveAspectRatio="none">
+            <path d="M0 80 Q 150 40 300 80 T 600 80 T 900 80 T 1200 80 T 1500 80 T 1800 80 T 2100 80 T 2400 80 V120 H0 Z"/>
+          </svg>
+        </div>
       </header>
 
       <section class="content" aria-labelledby="about-title">
         <h2 id="about-title" class="visually-hidden">About us</h2>
 
         <ul class="features" aria-label="What we offer">
-          <li>
+          <li class="reveal" style="--d:4">
             <span class="feature-icon" aria-hidden="true">🥥</span>
             <span>Fresh Coconuts</span>
           </li>
-          <li>
+          <li class="reveal" style="--d:5">
             <span class="feature-icon" aria-hidden="true">☕</span>
             <span>Beachside Café</span>
           </li>
-          <li>
+          <li class="reveal" style="--d:6">
             <span class="feature-icon" aria-hidden="true">🏖️</span>
             <span>Beach Hut</span>
           </li>
-          <li>
+          <li class="reveal" style="--d:7">
             <span class="feature-icon" aria-hidden="true">🏡</span>
             <span>Hut Rentals</span>
           </li>
         </ul>
 
-        <p class="intro">
+        <p class="intro reveal" style="--d:8">
           Welcome to our little paradise by the sea. Relax under the palms,
           enjoy a cool coconut or a warm cup of coffee, and reach out to us
           about renting the hut for your stay.
         </p>
 
         <nav class="actions" aria-label="Lazy Coconut links">
-          <a class="btn btn-primary" href="https://maps.app.goo.gl/1xDHsQeZ13wAXSYG7"
+          <a class="btn btn-primary reveal" style="--d:9" href="https://maps.app.goo.gl/1xDHsQeZ13wAXSYG7"
              target="_blank" rel="noopener noreferrer">
             <span class="btn-icon" aria-hidden="true">📍</span>
             <span>View Location</span>
             <span class="external" aria-hidden="true">↗</span>
           </a>
 
-          <a class="btn" href="https://share.google/lJbeV7HoV72IwAJEE"
+          <a class="btn reveal" style="--d:10" href="https://share.google/lJbeV7HoV72IwAJEE"
              target="_blank" rel="noopener noreferrer">
             <span class="btn-icon" aria-hidden="true">🔎</span>
             <span>Google Profile</span>
             <span class="external" aria-hidden="true">↗</span>
           </a>
 
-          <a class="btn" href="https://www.facebook.com/share/1JpLmMYRUy/"
+          <a class="btn reveal" style="--d:11" href="https://www.facebook.com/share/1JpLmMYRUy/"
              target="_blank" rel="noopener noreferrer">
             <span class="btn-icon facebook" aria-hidden="true">f</span>
             <span>Facebook Page</span>
             <span class="external" aria-hidden="true">↗</span>
           </a>
 
-          <a class="btn btn-outline" href="https://www.facebook.com/share/1JpLmMYRUy/"
+          <a class="btn btn-outline reveal" style="--d:12" href="https://www.facebook.com/share/1JpLmMYRUy/"
              target="_blank" rel="noopener noreferrer">
             <span class="btn-icon" aria-hidden="true">🏡</span>
             <span>Rental Inquiries</span>
@@ -96,7 +121,7 @@
           </a>
         </nav>
 
-        <p class="footer">Lazy Coconut Beach Hut · Made with 🥥 by the sea</p>
+        <p class="footer reveal" style="--d:13">Lazy Coconut Beach Hut · Made with 🥥 by the sea</p>
       </section>
 
     </article>
